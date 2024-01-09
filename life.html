@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>life</title>
+    <script src="life.js"></script>
+    <link rel="stylesheet" href="life.css">
+</head>
+<body>
+<div class="menu">
+    <label>Пауза</label>
+    <input type="button" id="pause" class="pause"/>
+    <label>Демо</label>
+    <select id="special">
+        <option value="glider">Генератор</option>
+        <option value="spaceship">Корабль</option>
+        <option value="block">Блоки</option>
+        <option value="big">Максимум</option>
+        <option value="torus">Связность тора</option>
+    </select>
+    <label>Очистить</label>
+    <input type="button" id="clear"/>
+    <label>Случайные числа</label>
+    <input type="button" id="random"/>
+    <label>Итерация</label>
+    <input type="text" id="generation" disabled>
+    <label>Время итерации, мс</label>
+    <input type="text" id="time" disabled>
+    <label>Ширина поля: <span id="MaxX_value"></span></label>
+    <input type="range" id="MaxX" name="" min="32" max="1408" step="32"/>
+    <label>Высота поля: <span id="MaxY_value"></span></label>
+    <input type="range" id="MaxY" name="" min="32" max="1024" step="32"/>
+    <label>Ширина окна: <span id="FrameX_value"></span></label>
+    <input type="range" id="FrameX" name="" min="32" max="1408" step="32"/>
+    <label>Высота окна: <span id="FrameY_value"></span></label>
+    <input type="range" id="FrameY" name="" min="32" max="1000" step="32"/>
+    <h4>Вращением колеса изменяем масштаб</h4>
+    <h4>В режиме паузы доступно редактирование средней кнопкой</h4>
+    <h4>С зажатой левой кнопкой двигаемся по полю</h4>
+
+</div>
+<canvas id="canvas"></canvas>
+</body>
+<!--
+Необходимо разработать мини-игру "Жизнь", подробнее о правилах игры можно узнать из википедии: https://w.wiki/84xj
+- Для игрового поля предлагается использовать эмуляцию поверхности тора (каждая крайняя правая клетка является соседом крайней левой клетки с тем же Y и каждая крайняя верхняя клетка является соседом крайней нижней клетки с тем же X).
+- Поле может быть любых размеров. Должна быть возможность изменять размерность поля через графический интерфейс.
+- Генерацию первого поколения предлагаем сделать с помощью мыши и/или сгенерировать случайным образом. (должно работать оба варианта)
+- Время генерации нового поколения отобразите на экране в любом удобном вам виде
+- Реализация должна быть выполнена без привлечения сторонних библиотек, фреймворков, сборщиков проектов пакетных менеджеров и т.д.
+В остальных аспектах не ограничиваем ваш творческий потенциал.
+В качестве дополнительной подзадачи Вы так же можете попробовать оптимизировать ваше решение.
+Мы обязательно попробуем запустить Вашу реализацию игры жизнь на большом поле, скажем, 1000 на 1000 клеток и больше.
+Дополнительные очки можно заработать, если игра будет работать без существенных потерь производительности.
+-->
+</html>
