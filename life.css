@@ -1,0 +1,12 @@
+body { margin:0; padding:0; font-family:Verdana; font-size: 1rem;  }
+canvas { background:#666; border:1px solid #FFF; margin:0; padding:0; }
+.menu { width:11rem; float:left; padding:0.25rem 0 0 0.25rem; }
+h4 { margin:0.25rem 0; font-weight:normal; }label { display:block; }
+
+select { width:10.4rem; border-radius:0.25rem; margin-bottom:0.5rem; font-size:1rem; }
+input { width:10rem; margin:0 0 0.5rem;  border-radius:0.25rem; border:1px solid #AAA; text-align:right; }
+input[type="range"] { width:10.25rem; }
+input[type="button"]{ width:10.35rem; }
+input[type="button"]:hover { background:#DDD; border:1px solid #333; }
+input[type="button"].pause { background:#0060DF; }
+input[type="button"].active { background:darkred; }
